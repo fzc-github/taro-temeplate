@@ -1,0 +1,18 @@
+// 蒙牛主题色
+$themeColor: #00AC23;
+
+// tabbar样式
+$tabbarHeight: 100px;
+$tabbarColor: #8E8F93;
+$tabbarSelectedColor: $themeColor;
+
+// 柔和
+$tenderStyle: all 0.3s;
+
+
+
+:export {
+  tabbarHeight: $tabbarHeight;
+  tabbarColor: $tabbarColor;
+  tabbarSelectedColor: $tabbarSelectedColor;
+}

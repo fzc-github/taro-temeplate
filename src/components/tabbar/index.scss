@@ -1,0 +1,24 @@
+@import "../../assets/css/var.scss";
+
+.tabbar {
+  width: 100vw;
+  height: $tabbarHeight;
+  background: #fff;
+  box-shadow: 0 -4px 14px rgba(220, 220, 220, 0.2);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  box-sizing: content-box;
+  &__item {
+    height: 100%;
+    transition: $tenderStyle;
+    font-size: 24px;
+    line-height: 24px;
+    &_icon {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 5px;
+    }
+  }
+}

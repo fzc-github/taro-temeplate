@@ -1,0 +1,69 @@
+@import "../../assets/css/var.scss";
+
+.top-bar {
+  width: 100vw;
+  height: 80px;
+  background: #fff;
+  color: #666;
+  padding-right: 30px;
+  &__tabs {
+    width: 450px;
+    height: 100%;
+    position: relative;
+    &_item {
+      width: 225px;
+      height: 100%;
+      text-align: center;
+      line-height: 80px;
+      transition: $tenderStyle;
+      &.active {
+        font-weight: 500;
+        color: $themeColor;
+      }
+    }
+    &_curline {
+      width: 184px;
+      height: 6px;
+      background: $themeColor;
+      position: absolute;
+      bottom: 0;
+      transition: $tenderStyle;
+    }
+  }
+  &__tip {
+    font-size: 24px;
+    color: #A9A9A9;
+  }
+}
+
+.platform-bar {
+  width: 100vw;
+  height: 94px;
+  padding: 24px 8px;
+  background-color: #fff;
+  overflow: hidden;
+  font-size: 24px;
+  color: #666;
+  line-height: 46px;
+  white-space: nowrap;
+  &__item {
+    display: inline-block;
+    height: 46px;
+    padding: 0 34px;
+    margin-left: 16px;
+    border-radius: 23px;
+    border: 2px #EAEAEA solid;
+    text-align: center;
+    transition: $tenderStyle;
+    &.active {
+      color: #fff;
+      background: linear-gradient(135deg, #00D649 0%, #00AC23 100%);
+      box-shadow: 0 10px 32px -16px rgba(0, 203, 52, 0.79);
+    }
+  }
+}
+
+.swiper-box {
+  width: 100vw;
+  height: calc(100% - 80px - 94px);
+}

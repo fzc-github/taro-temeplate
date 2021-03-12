@@ -1,0 +1,7 @@
+.main {
+  width: 100vw;
+  overflow: hidden;
+  &__view {
+    align-items: flex-start;
+  }
+}

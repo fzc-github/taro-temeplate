@@ -1,0 +1,24 @@
+.navbar {
+  width: 100vw;
+  background: #fff;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  position: relative;
+  &__main {
+    height: 44Px;
+    line-height: 44Px;
+    text-align: center;
+  }
+  &__goback {
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    &_icon {
+      position: absolute;
+      left: 20px;
+      bottom: 20px;
+    }
+  }
+}

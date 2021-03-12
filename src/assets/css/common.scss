@@ -1,0 +1,22 @@
+.tabbar-page {
+  width: 100vw;
+  // 在页面内还需减去 navbarHeight 和 safeAreaHeight
+  height: calc(100vh - #{$tabbarHeight});
+}
+
+.click-hover {
+  opacity: 0.6;
+}
+
+// flex
+@mixin flex-init($justify-content) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify-content;
+}
+.flexst {@include flex-init(flex-start);}
+.flexbt {@include flex-init(space-between);}
+.flexct {@include flex-init(center);}
+.flexed {@include flex-init(flex-end);}
+.flexwp {flex-wrap: wrap;}
+.flexcl {flex-direction: column;}
